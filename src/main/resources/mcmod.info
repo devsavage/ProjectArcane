@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ProjectArcane",
+  "name": "Project Arcane",
+  "description": "Adds armor, tools, blocks, items and a bunch more random things and mechanics!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://savageboy74.tv/projectarcane/",
+  "updateUrl": "https://github.com/woody104/projectarcane",
+  "authors": ["woody104"],
+  "credits": "The modders before me who gave me inspiration and Neale for helping me with some stuff.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

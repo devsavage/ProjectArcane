@@ -1,0 +1,136 @@
+# CreativeTabs
+itemGroup.arcaneTab=Project: Arcane
+itemGroup.arcaneTab_combat=Project: Arcane Combat
+itemGroup.arcaneTab_tools=Project: Arcane Tools
+itemGroup.arcaneTab_food=Project: Arcane Food
+itemGroup.arcaneTab_material=Project: Arcane Materials
+itemGroup.arcaneTab_blocks=Project: Arcane Blocks
+
+# Blocks
+tile.blockEnergyRed.name=Glorium Energy Block
+tile.blockEnergyGreen.name=Borium Energy Block
+tile.blockMC.name=Machine Core
+tile.arcaneChest.name=Arcane Chest
+tile.blockSandBlock.name=Sand Block
+tile.Log.Maple.name=Maple Log
+tile.Log.GreenApple.name=Green Apple Oak Log
+tile.Leaf.Maple.name=Maple Leaves
+tile.Leaf.GreenApple.name=Green Apple Oak Leaves
+
+# Crops
+tile.strawberryPlant.name=Strawberry Plant
+item.strawberry.name=Strawberry
+item.strawberrySeeds.name=Strawberry Seeds
+item.cantalope.name=Slice of Cantaloupe
+tile.cantalope.name=Cantaloupe Block
+item.cantalopeSeeds.name=Cantaloupe Seeds
+
+# Ores
+tile.ArcaneGemOre.name=Arcane Gem Ore
+tile.blockArcaneGem.name=Arcane Gem Block
+tile.DarkCrystalOre.name=Dark Crystal Ore
+tile.EmeraldNuggetOre.name=Emerald Nugget Ore
+tile.cobaltOre.name=Cobalt Ore
+tile.vanadiumOre.name=Vanadium Ore
+tile.nickelOre.name=Nickel Ore
+tile.manganeseOre.name=Manganese Ore
+
+# Machines
+tile.ArcaneFurnaceIdle.name=Arcane Furnace
+tile.ArcaneFurnaceActive.name=Arcane Furnace
+tile.DualFurnaceIdle.name=Dual Furnace
+tile.DualFurnaceActive.name=Dual Furnace
+container.dualFurnace.name=Dual Furnace
+
+#Other Blocks
+tile.ArcaneTable.name=Arcane Table
+tile.arcaneLampOff.name=Arcane Lamp
+tile.arcaneLampOn.name=Arcane Lamp (On)
+
+
+# Items
+item.itemArcaneCell.name=Arcane Cell
+item.arcanePlate.name=Arcane Plate
+item.itemArcaneRod.name=Arcane Rod
+item.coalChunk.name=Chunk of Coal
+item.cobaltPlate.name=Cobalt Plate
+item.goldHammer.name=Golden Hammer
+item.sandDust.name=Sand Dust
+
+# Tools
+item.arcaneAxe.name=Arcane Axe
+item.arcanePickaxe.name=Arcane Pickaxe
+item.arcaneSpade.name=Arcane Shovel
+item.arcaneHoe.name=Arcane Hoe
+item.arcaneSword.name=Arcane Sword
+item.cobaltAxe.name=Cobalt Axe
+item.cobaltPickaxe.name=Cobalt Pickaxe
+item.cobaltShovel.name=Cobalt Shovel
+item.cobaltHoe.name=Cobalt Hoe
+item.cobaltSword.name=Cobalt Sword
+item.dirtStick.name=Dirty Stick
+item.dirtPickaxe.name=Dirty Pickaxe
+item.dirtSpade.name=Dirty Shovel
+item.dirtSword.name=Dirty Sword
+item.dirtAxe.name=Dirty Axe
+item.dirtHoe.name=Dirty Hoe
+item.darkCrystalPickaxe.name=Dark Crystal Pickaxe
+item.darkCrystalShovel.name=Dark Crystal Shovel
+item.darkCrystalHoe.name=Dark Crystal Hoe
+item.darkCrystalSword.name=Dark Crystal Sword
+item.darkCrystalAxe.name=Dark Crystal Axe
+
+# Armor
+item.arcaneHelmet.name=Arcane Helmet
+item.arcaneChestplate.name=Arcane Chestplate
+item.arcaneLeggings.name=Arcane Leggings
+item.arcaneBoots.name=Arcane Boots
+item.darkCrystalHelmet.name=Dark Crystal Helmet
+item.darkCrystalChestplate.name=Dark Crystal Chestplate
+item.darkCrystalLeggings.name=Dark Crystal Leggings
+item.darkCrystalBoots.name=Dark Crystal Boots
+item.boneHelmet.name=Bone Helmet
+item.boneChestplate.name=Bone Chestplate
+item.boneLeggings.name=Bone Leggings
+item.boneBoots.name=Bone Boots
+
+#Gems, Ingots and Ore Drops
+item.itemArcaneGem.name=Arcane Gem
+item.darkCrystal.name=Dark Crystal
+item.EmeraldNugget.name=Emerald Nugget
+item.itemChainIngot.name=Chain Ingot
+item.itemChainLink.name=Single Chain Link
+item.itemChainLink_2.name=Connected Chain Link
+item.itemWoodChips.name=Woodchips
+item.itemCobaltDust.name=Cobalt Dust
+item.itemCobaltIngot.name=Cobalt Ingot
+
+# Metal Items
+item.itemCutter.name=Cutter
+item.itemBlades.name=Cutter Blades
+item.itemHandle.name=Handle
+item.itemMetalBender.name=Metal Bender
+item.itemArcaneMetalPlate.name=Metal Plate
+item.itemArcaneMetal.name=Metal Ingot
+item.itemEnhancedArcaneMetal.name=Enhanced Metal Ingot
+item.toolSaw.name=Saw
+
+#Special Items
+item.itemThunderfury.name=Thunderfury
+
+# Durable Items
+item.toolAH.name=Arcane Hammer
+item.toolAC.name=Arcane Chisel
+
+# Food
+item.foodGreenApple.name=Green Apple
+item.foodRawChickenLeg.name=Raw Chicken Leg
+item.foodCookedChickenLeg.name=Cooked Chicken Leg
+item.foodSunflowerSeeds.name=Sunflower Seeds
+
+# Achievements
+achievement.bonemeal=Take Off!
+achievement.bonemeal.desc=Officially completed the first step to unlocking Arcane!
+achievement.smoothstone=Arcane Unlocked!
+achievement.arcane.desc=Arcane Complete!
+achievement.smoothstone.desc=This was just a test! Good Job!
