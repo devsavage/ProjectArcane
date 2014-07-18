@@ -108,7 +108,7 @@ public class Arcane {
     @SubscribeEvent
     public void checkUpdate(PlayerEvent.PlayerLoggedInEvent event) {
         if (Reference.UpdateCheck.OUTDATED) {
-            event.player.addChatComponentMessage(new ChatComponentText(EnumChatFormatting.AQUA + "Project: Arcane " +  EnumChatFormatting.WHITE + "is " + EnumChatFormatting.DARK_RED + "outdated!"));
+            event.player.addChatComponentMessage(new ChatComponentText(EnumChatFormatting.GOLD + "Project: Arcane " +  EnumChatFormatting.WHITE + "is " + EnumChatFormatting.DARK_RED + "outdated!"));
             event.player.addChatComponentMessage(new ChatComponentText("Current Version: " + EnumChatFormatting.DARK_RED + Reference.UpdateCheck.CURRENT_VERSION + EnumChatFormatting.WHITE +  " Newest Version: " + EnumChatFormatting.DARK_GREEN + Reference.UpdateCheck.NEWEST_VERSION));
         }
     }

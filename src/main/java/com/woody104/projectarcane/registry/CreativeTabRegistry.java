@@ -41,7 +41,7 @@ public class CreativeTabRegistry
     public static CreativeTabs arcaneTab_blocks = new CreativeTabs("arcaneTab_blocks") {
         @SideOnly(Side.CLIENT)
         public Item getTabIconItem() {
-            return Item.getItemFromBlock(Arcane.blockArcaneLampOff);
+            return Item.getItemFromBlock(BlockRegistry.blockArcaneLampOff);
         }
     };
 }

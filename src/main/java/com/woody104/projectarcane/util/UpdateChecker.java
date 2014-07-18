@@ -18,7 +18,7 @@ public class UpdateChecker {
 
         if (currentVersion < nextVersion)
         {
-            Reference.UpdateCheck.UPDATES = getUpdate(nextVersion);
+            Reference.UpdateCheck.NEWEST_VERSION = getUpdate(nextVersion);
             Reference.UpdateCheck.OUTDATED = true;
         }
         else

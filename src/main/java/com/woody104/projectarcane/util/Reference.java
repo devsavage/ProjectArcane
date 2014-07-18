@@ -9,9 +9,9 @@ public class Reference
 
     public static final class UpdateCheck {
 
-        public static final int UPDATE_NUMBER = 5;
+        public static final int UPDATE_NUMBER = 6;
         public static final String CURRENT_VERSION = VERSION;
-        public static final String NEWEST_VERSION = "";
+        public static String NEWEST_VERSION = "";
         public static String UPDATES = "";
         public static boolean OUTDATED = false;
 
