@@ -9,8 +9,8 @@ Until Next Time!
 
 MOD INFO
 ========
-Minecraft Version: 1.7.2  
-Forge Version: 10.12.0.1047+  
+Minecraft Version: 1.7.10  
+Forge Version: 10.13.0.1179+  
 
 Links
 ======
