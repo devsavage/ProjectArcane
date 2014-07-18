@@ -1,6 +1,8 @@
 package com.woody104.projectarcane.tools;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.registry.CreativeTabRegistry;
+import com.woody104.projectarcane.util.Reference;
 import net.minecraft.item.Item;
 
 /**
@@ -14,7 +16,7 @@ public class ToolSaw extends Item {
         this.setMaxStackSize(1);
         this.setMaxDamage(150);
         this.setUnlocalizedName("toolSaw");
-        this.setTextureName(Arcane.MODID + ":" + "itemSaw" );
-        this.setCreativeTab(Arcane.arcaneTab);
+        this.setTextureName(Reference.MOD_ID + ":" + "itemSaw" );
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab);
     }
 }

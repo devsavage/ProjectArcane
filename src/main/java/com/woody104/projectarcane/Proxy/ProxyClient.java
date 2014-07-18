@@ -1,5 +1,6 @@
-package com.woody104.projectarcane.Proxy;
+package com.woody104.projectarcane.proxy;
 
+import com.woody104.projectarcane.registry.BlockRegistry;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
 
@@ -15,7 +16,7 @@ public class ProxyClient extends ProxyCommon {
 	public void registerRenderThings() {
 		
 		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityArcaneChest.class, new ArcaneChestRenderer());
-		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(Arcane.arcaneChest), new ItemRendererArcaneChest());
+		MinecraftForgeClient.registerItemRenderer(Item.getItemFromBlock(BlockRegistry.arcaneChest), new ItemRendererArcaneChest());
 		
 		
 	}

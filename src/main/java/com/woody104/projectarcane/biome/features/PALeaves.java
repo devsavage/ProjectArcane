@@ -1,6 +1,7 @@
 package com.woody104.projectarcane.biome.features;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.util.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockLeaves;
@@ -68,7 +69,7 @@ public class PALeaves extends BlockLeaves
 
             for (int j = 0; j < leafTypes[i].length; ++j)
             {
-                this.field_150129_M[i][j] = iconRegister.registerIcon(Arcane.MODID + ":" + leafTypes[i][j]);
+                this.field_150129_M[i][j] = iconRegister.registerIcon(Reference.MOD_ID + ":" + leafTypes[i][j]);
             }
         }
     }

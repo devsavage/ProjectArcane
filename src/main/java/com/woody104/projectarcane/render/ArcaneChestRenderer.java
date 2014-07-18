@@ -3,6 +3,7 @@ package com.woody104.projectarcane.render;
 import java.util.Calendar;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.client.model.ModelChest;
 import net.minecraft.client.model.ModelLargeChest;
@@ -23,12 +24,11 @@ import cpw.mods.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 public class ArcaneChestRenderer extends TileEntitySpecialRenderer
 {
-    private static final ResourceLocation field_147505_d = new ResourceLocation(Arcane.MODID + ":" + "textures/entity/chest/ArcaneChestLarge.png");
-    private static final ResourceLocation field_147504_g = new ResourceLocation(Arcane.MODID + ":" + "textures/entity/chest/arcaneChest.png");
-    private ModelChest field_147510_h = new ModelChest();
-    private ModelChest field_147511_i = new ModelLargeChest();
+    private static final ResourceLocation textureNormalDouble = new ResourceLocation(Reference.MOD_ID + ":" + "textures/entity/chest/ArcaneChestLarge.png");
+    private static final ResourceLocation textureNormal = new ResourceLocation(Reference.MOD_ID + ":" + "textures/entity/chest/arcaneChest.png");
+    private ModelChest simpleChest = new ModelChest();
+    private ModelChest largeChest = new ModelLargeChest();
     private boolean isChristmas;
-    private static final String __OBFID = "CL_00000965";
 
     public ArcaneChestRenderer()
     {
@@ -75,18 +75,18 @@ public class ArcaneChestRenderer extends TileEntitySpecialRenderer
 
             if (p_147502_1_.adjacentChestXPos == null && p_147502_1_.adjacentChestZPos == null)
             {
-                modelchest = this.field_147510_h;
+                modelchest = this.simpleChest;
 
 
-                this.bindTexture(field_147504_g);
+                this.bindTexture(textureNormal);
 
             }
             else
             {
-                modelchest = this.field_147511_i;
+                modelchest = this.largeChest;
 
 
-                this.bindTexture(field_147505_d);
+                this.bindTexture(textureNormalDouble);
 
             }
 

@@ -6,6 +6,7 @@ import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.woody104.projectarcane.core.Arcane;
 
+import com.woody104.projectarcane.registry.CreativeTabRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -32,7 +33,7 @@ public class ItemThunderfury extends ItemTool {
 		this.setMaxDamage(agem.getMaxUses());
 		this.efficiencyOnProperMaterial = agem.getEfficiencyOnProperMaterial();
 		this.damageVsEntity = 20; agem.getDamageVsEntity();
-        this.setCreativeTab(Arcane.arcaneTab_tools);
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab_tools);
         if (this.getClass().isInstance(ItemPickaxe()))
         {
             toolClass = "pickaxe";

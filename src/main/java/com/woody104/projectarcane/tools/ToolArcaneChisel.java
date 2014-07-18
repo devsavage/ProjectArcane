@@ -1,6 +1,8 @@
 package com.woody104.projectarcane.tools;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.registry.CreativeTabRegistry;
+import com.woody104.projectarcane.util.Reference;
 import net.minecraft.item.Item;
 
 /**
@@ -14,8 +16,8 @@ public class ToolArcaneChisel extends Item {
         this.maxStackSize = 1;
         this.setMaxDamage(100);
         this.setUnlocalizedName("toolAC");
-        this.setTextureName(Arcane.MODID + ":" + "toolArcaneChisel" );
-        this.setCreativeTab(Arcane.arcaneTab);
+        this.setTextureName(Reference.MOD_ID + ":" + "toolArcaneChisel" );
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab);
     }
 
 }

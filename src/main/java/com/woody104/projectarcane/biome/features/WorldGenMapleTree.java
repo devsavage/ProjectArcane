@@ -1,6 +1,7 @@
 package com.woody104.projectarcane.biome.features;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.registry.BlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSapling;
 import net.minecraft.init.Blocks;
@@ -97,7 +98,7 @@ public class WorldGenMapleTree extends WorldGenAbstractTree
             {
                 Block block2 = par1World.getBlock(par3, par4 - 1, par5);
 
-                boolean isSoil = block2.canSustainPlant(par1World, par3, par4 - 1, par5, ForgeDirection.UP, (BlockSapling) Arcane.blockSapling);
+                boolean isSoil = block2.canSustainPlant(par1World, par3, par4 - 1, par5, ForgeDirection.UP, (BlockSapling) BlockRegistry.blockSapling);
                 if (isSoil && par4 < 256 - l - 1)
                 {
                     block2.onPlantGrow(par1World, par3, par4 - 1, par5, par3, par4, par5);
@@ -127,7 +128,7 @@ public class WorldGenMapleTree extends WorldGenAbstractTree
 
                                     if (block1.isAir(par1World, i2, k1, k2) || block1.isLeaves(par1World, i2, k1, k2))
                                     {
-                                        this.setBlockAndNotifyAdequately(par1World, i2, k1, k2, Arcane.blockLeaf, this.metaLeaves);
+                                        this.setBlockAndNotifyAdequately(par1World, i2, k1, k2, BlockRegistry.blockLeaf, this.metaLeaves);
                                     }
                                 }
                             }
@@ -140,7 +141,7 @@ public class WorldGenMapleTree extends WorldGenAbstractTree
 
                         if (block.isAir(par1World, par3, par4 + k1, par5) || block.isLeaves(par1World, par3, par4 + k1, par5))
                         {
-                            this.setBlockAndNotifyAdequately(par1World, par3, par4 + k1, par5, Arcane.blockLog, this.metaWood);
+                            this.setBlockAndNotifyAdequately(par1World, par3, par4 + k1, par5, BlockRegistry.blockLog, this.metaWood);
 
                             if (this.vinesGrow && k1 > 0)
                             {

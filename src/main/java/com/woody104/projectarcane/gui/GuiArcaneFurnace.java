@@ -1,5 +1,6 @@
 package com.woody104.projectarcane.gui;
 
+import com.woody104.projectarcane.util.Reference;
 import org.lwjgl.opengl.GL11;
 
 import com.woody104.projectarcane.core.Arcane;
@@ -14,7 +15,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class GuiArcaneFurnace extends GuiContainer {
 	
-	public static final ResourceLocation bground = new ResourceLocation(Arcane.MODID + ":" +  "textures/gui/GuiArcaneFurnace.png");
+	public static final ResourceLocation bground = new ResourceLocation(Reference.MOD_ID + ":" +  "textures/gui/GuiArcaneFurnace.png");
 	
 	public TileEntityArcaneFurnace arcaneFurnace;
 

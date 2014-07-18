@@ -7,6 +7,7 @@ import com.woody104.projectarcane.container.ContainerArcaneTable;
 import com.woody104.projectarcane.gui.GuiArcaneFurnace;
 import com.woody104.projectarcane.gui.GuiDualFurnace;
 import com.woody104.projectarcane.gui.GuiArcaneTable;
+import com.woody104.projectarcane.registry.BlockRegistry;
 import com.woody104.projectarcane.tileentity.TileEntityArcaneFurnace;
 import com.woody104.projectarcane.tileentity.TileEntityDualFurnace;
 
@@ -23,13 +24,13 @@ public class GuiHandler implements IGuiHandler {
 
 		if(entity != null) {
 			switch(ID) {
-			case Arcane.guiIDArcaneFurnace:
+			case BlockRegistry.guiIDArcaneFurnace:
 				if (entity instanceof TileEntityArcaneFurnace) {
 					return new ContainerArcaneFurnace(player.inventory, (TileEntityArcaneFurnace) entity);
 				}
 				return null;
 
-                case Arcane.guiIDDualFurnace:
+                case BlockRegistry.guiIDDualFurnace:
                     if (entity instanceof TileEntityDualFurnace) {
                         return new ContainerDualFurnace(player.inventory, (TileEntityDualFurnace) entity);
                     }
@@ -37,8 +38,8 @@ public class GuiHandler implements IGuiHandler {
             }
 		}
 
-		if(ID == Arcane.guiIDArcaneTable) {
-			return ID == Arcane.guiIDArcaneTable && world.getBlock(x, y, z) == Arcane.blockArcaneTable ? new ContainerArcaneTable(player.inventory, world, x, y, z) : null;
+		if(ID == BlockRegistry.guiIDArcaneTable) {
+			return ID == BlockRegistry.guiIDArcaneTable && world.getBlock(x, y, z) == BlockRegistry.blockArcaneTable ? new ContainerArcaneTable(player.inventory, world, x, y, z) : null;
 		}
 
 		return null;
@@ -50,13 +51,13 @@ public class GuiHandler implements IGuiHandler {
 
 		if(entity != null) {
 			switch(ID) {
-			case Arcane.guiIDArcaneFurnace:
+			case BlockRegistry.guiIDArcaneFurnace:
 				if (entity instanceof TileEntityArcaneFurnace) {
 					return new GuiArcaneFurnace(player.inventory, (TileEntityArcaneFurnace) entity);
 				}
 				return null;
 
-                case Arcane.guiIDDualFurnace:
+                case BlockRegistry.guiIDDualFurnace:
                     if (entity instanceof TileEntityDualFurnace) {
                         return new GuiDualFurnace(player.inventory, (TileEntityDualFurnace) entity);
                     }
@@ -64,8 +65,8 @@ public class GuiHandler implements IGuiHandler {
 			}
 		}
 
-		if(ID == Arcane.guiIDArcaneTable) {
-			return ID == Arcane.guiIDArcaneTable && world.getBlock(x, y, z) == Arcane.blockArcaneTable ? new GuiArcaneTable(player.inventory, world, x, y, z) : null;
+		if(ID == BlockRegistry.guiIDArcaneTable) {
+			return ID == BlockRegistry.guiIDArcaneTable && world.getBlock(x, y, z) == BlockRegistry.blockArcaneTable ? new GuiArcaneTable(player.inventory, world, x, y, z) : null;
 		}
 
 		return null;

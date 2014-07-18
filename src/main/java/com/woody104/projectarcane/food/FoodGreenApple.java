@@ -2,6 +2,7 @@ package com.woody104.projectarcane.food;
 
 import com.woody104.projectarcane.core.Arcane;
 
+import com.woody104.projectarcane.registry.CreativeTabRegistry;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
@@ -15,7 +16,7 @@ public class FoodGreenApple extends ItemFood {
         super(j, b);
         this.setUnlocalizedName("foodGreenApple");
         this.setMaxStackSize(16);
-        this.setCreativeTab(Arcane.arcaneTab_food);
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab_food);
     }
 
     protected void onFoodEaten(ItemStack itemstack, World world, EntityPlayer player) {

@@ -1,6 +1,9 @@
 package com.woody104.projectarcane.blocks;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.registry.BlockRegistry;
+import com.woody104.projectarcane.registry.ItemRegistry;
+import com.woody104.projectarcane.util.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockCrops;
@@ -20,7 +23,7 @@ public class PACrop extends BlockCrops {
         this.iconArray = new IIcon[4];
 
         for (int i = 0; i < this.iconArray.length; i++) {
-            this.iconArray[i] = iconRegister.registerIcon(Arcane.MODID + ":" + this.getUnlocalizedName().substring(5) + (i + 1));
+            this.iconArray[i] = iconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(5) + (i + 1));
         }
     }
 
@@ -41,10 +44,10 @@ public class PACrop extends BlockCrops {
     }
 
     protected Item func_149866_i() {
-        return Arcane.cropStrawberrySeeds;
+        return ItemRegistry.cropStrawberrySeeds;
     }
 
     protected Item func_149865_P() {
-        return Arcane.cropStrawberry;
+        return ItemRegistry.cropStrawberry;
     }
 }

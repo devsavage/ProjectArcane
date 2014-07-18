@@ -1,5 +1,6 @@
 package com.woody104.projectarcane.gui;
 
+import com.woody104.projectarcane.util.Reference;
 import org.lwjgl.opengl.GL11;
 
 import com.woody104.projectarcane.core.Arcane;
@@ -14,7 +15,7 @@ import net.minecraft.world.World;
 
 public class GuiArcaneTable extends GuiContainer {
 	
-	private ResourceLocation texture = new ResourceLocation(Arcane.MODID + ":" + "textures/gui/NewArcaneTable.png");
+	private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":" + "textures/gui/NewArcaneTable.png");
 
 	public GuiArcaneTable(InventoryPlayer invPlayer, World world, int x, int y, int z) {
 		super(new ContainerArcaneTable(invPlayer, world, x, y, z));

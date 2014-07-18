@@ -1,6 +1,7 @@
 package com.woody104.projectarcane.biome.features;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.registry.BlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSapling;
 import net.minecraft.init.Blocks;
@@ -55,7 +56,7 @@ public class WorldGenGreenAppleTree extends WorldGenAbstractTree
 
             for (int i = 0; i < baseLength; i++ )
             {
-                buildBlock(world, x, y + h, z, Arcane.blockLog, 1);
+                buildBlock(world, x, y + h, z, BlockRegistry.blockLog, 1);
                 h++;
             }
 
@@ -79,16 +80,16 @@ public class WorldGenGreenAppleTree extends WorldGenAbstractTree
         {
             for (int j = -1; j < 2; j++)
             {
-                buildBlock(world, x + i, y, z + j, Arcane.blockLeaf, 1);
+                buildBlock(world, x + i, y, z + j, BlockRegistry.blockLeaf, 1);
             }
         }
 
-        buildBlock(world, x, y, z, Arcane.blockLog, 1);
-        buildBlock(world, x + 1, y + 1, z, Arcane.blockLeaf, 1);
-        buildBlock(world, x - 1, y + 1, z, Arcane.blockLeaf, 1);
-        buildBlock(world, x, y + 1, z - 1, Arcane.blockLeaf, 1);
-        buildBlock(world, x, y + 1, z + 1, Arcane.blockLeaf, 1);
-        buildBlock(world, x, y + 2, z, Arcane.blockLeaf, 1);
+        buildBlock(world, x, y, z, BlockRegistry.blockLog, 1);
+        buildBlock(world, x + 1, y + 1, z, BlockRegistry.blockLeaf, 1);
+        buildBlock(world, x - 1, y + 1, z, BlockRegistry.blockLeaf, 1);
+        buildBlock(world, x, y + 1, z - 1, BlockRegistry.blockLeaf, 1);
+        buildBlock(world, x, y + 1, z + 1, BlockRegistry.blockLeaf, 1);
+        buildBlock(world, x, y + 2, z, BlockRegistry.blockLeaf, 1);
     }
 
     public void generateBranch(World world, Random random, int x, int y, int z, int p)
@@ -97,18 +98,18 @@ public class WorldGenGreenAppleTree extends WorldGenAbstractTree
         {
             for (int j = -1; j < 2; j++)
             {
-                buildBlock(world, x + i, y, z + j, Arcane.blockLeaf, 1);
+                buildBlock(world, x + i, y, z + j, BlockRegistry.blockLeaf, 1);
             }
         }
 
-        buildBlock(world, x, y, z, Arcane.blockLog, 1);
-        buildBlock(world, x + 1, y + 1, z, Arcane.blockLeaf, 1);
-        buildBlock(world, x - 1, y + 1, z, Arcane.blockLeaf, 1);
-        buildBlock(world, x, y + 1, z - 1, Arcane.blockLeaf, 1);
-        buildBlock(world, x, y + 1, z + 1, Arcane.blockLeaf, 1);
-        buildBlock(world, x, y + 2, z, Arcane.blockLeaf, 1);
-        buildBlock(world, x, y, z, Arcane.blockLog, 1);
-        buildBlock(world, x, y + 1, z, Arcane.blockLog, 1);
+        buildBlock(world, x, y, z, BlockRegistry.blockLog, 1);
+        buildBlock(world, x + 1, y + 1, z, BlockRegistry.blockLeaf, 1);
+        buildBlock(world, x - 1, y + 1, z, BlockRegistry.blockLeaf, 1);
+        buildBlock(world, x, y + 1, z - 1, BlockRegistry.blockLeaf, 1);
+        buildBlock(world, x, y + 1, z + 1, BlockRegistry.blockLeaf, 1);
+        buildBlock(world, x, y + 2, z, BlockRegistry.blockLeaf, 1);
+        buildBlock(world, x, y, z, BlockRegistry.blockLog, 1);
+        buildBlock(world, x, y + 1, z, BlockRegistry.blockLog, 1);
     }
 
     public void buildBlock(World world, int x, int y, int z, Block block, int meta)

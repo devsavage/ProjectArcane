@@ -13,23 +13,23 @@ public class UpdateChecker {
 
     public static void checkForUpdates() throws IOException
     {
-        int currentVersion = Arcane.MODVERSION;
+        int currentVersion = Reference.UpdateCheck.UPDATE_NUMBER;
         int nextVersion = getNewest();
 
         if (currentVersion < nextVersion)
         {
-            Arcane.updates = getUpdate(nextVersion);
-            Arcane.outdated = true;
+            Reference.UpdateCheck.UPDATES = getUpdate(nextVersion);
+            Reference.UpdateCheck.OUTDATED = true;
         }
         else
         {
-            Arcane.outdated = false;
+            Reference.UpdateCheck.OUTDATED = false;
         }
     }
 
     public static int getNewest() throws IOException
     {
-        URL url = new URL("http://pastebin.com/raw.php?i=LSSJzS71");
+        URL url = new URL("https://raw.githubusercontent.com/savageboy74/ProjectArcane/master/UpdateNumber.txt");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("POST");
         connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
@@ -57,7 +57,7 @@ public class UpdateChecker {
 
     private static String getUpdate(int version) throws IOException
     {
-        URL url = new URL("http://pastebin.com/raw.php?i=gTX8XGz9");
+        URL url = new URL("https://raw.githubusercontent.com/savageboy74/ProjectArcane/master/NewestVersion.txt");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("POST");
         connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");

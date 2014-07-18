@@ -1,7 +1,9 @@
 package com.woody104.projectarcane.blocks;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.registry.BlockRegistry;
 import com.woody104.projectarcane.tileentity.TileEntityDualFurnace;
+import com.woody104.projectarcane.util.Reference;
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -37,8 +39,8 @@ public class DualFurnace extends BlockContainer {
 
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
-        this.blockIcon = iconRegister.registerIcon(Arcane.MODID + ":" + (this.isActive ? "DualFurnaceSideOn" : "DualFurnaceSideOff"));
-        this.iconFront = iconRegister.registerIcon(Arcane.MODID + ":" + (this.isActive ? "DualFurnaceFrontOn" : "DualFurnaceFrontOff"));
+        this.blockIcon = iconRegister.registerIcon(Reference.MOD_ID + ":" + (this.isActive ? "DualFurnaceSideOn" : "DualFurnaceSideOff"));
+        this.iconFront = iconRegister.registerIcon(Reference.MOD_ID + ":" + (this.isActive ? "DualFurnaceFrontOn" : "DualFurnaceFrontOff"));
     }
 
     @SideOnly(Side.CLIENT)
@@ -110,7 +112,7 @@ public class DualFurnace extends BlockContainer {
         else if (!player.isSneaking()) {
             TileEntityDualFurnace entity = (TileEntityDualFurnace) world.getTileEntity(x, y, z);
             if (entity != null) {
-                FMLNetworkHandler.openGui(player, Arcane.instance, Arcane.guiIDDualFurnace, world, x, y, z);
+                FMLNetworkHandler.openGui(player, Arcane.instance, BlockRegistry.guiIDDualFurnace, world, x, y, z);
             }
 
             return true;
@@ -134,9 +136,9 @@ public class DualFurnace extends BlockContainer {
         keepInventory = true;
 
         if (isSmelting) {
-            world.setBlock(xCoord, yCoord, zCoord, Arcane.blockDualFurnaceActive);
+            world.setBlock(xCoord, yCoord, zCoord, BlockRegistry.blockDualFurnaceActive);
         }else {
-            world.setBlock(xCoord, yCoord, zCoord, Arcane.blockDualFurnaceIdle);
+            world.setBlock(xCoord, yCoord, zCoord, BlockRegistry.blockDualFurnaceIdle);
         }
 
         keepInventory = false;

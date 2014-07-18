@@ -3,6 +3,7 @@ package com.woody104.projectarcane.container;
 import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.crafting.ArcaneTableCraftingManager;
 
+import com.woody104.projectarcane.registry.BlockRegistry;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -117,7 +118,7 @@ public class ContainerArcaneTable extends Container {
 	
 	@Override
 	public boolean canInteractWith(EntityPlayer player) {
-		if(worldObj.getBlock(posX, posY, posZ) != Arcane.blockArcaneTable) {
+		if(worldObj.getBlock(posX, posY, posZ) != BlockRegistry.blockArcaneTable) {
 			return false;
 		}else{
 			return player.getDistanceSq(posX, posY, posZ) <= 64.0D;

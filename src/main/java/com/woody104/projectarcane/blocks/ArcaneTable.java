@@ -2,6 +2,9 @@ package com.woody104.projectarcane.blocks;
 
 import com.woody104.projectarcane.core.Arcane;
 
+import com.woody104.projectarcane.registry.BlockRegistry;
+import com.woody104.projectarcane.registry.CreativeTabRegistry;
+import com.woody104.projectarcane.util.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -25,7 +28,7 @@ public class ArcaneTable extends Block {
 		
 		this.setHardness(3.5F);
 		this.setResistance(5.0F);
-        this.setCreativeTab(Arcane.arcaneTab_blocks);	}
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab_blocks);	}
 	
 	@SideOnly(Side.CLIENT)
 	public IIcon getIcon (int side, int metadata) {
@@ -34,13 +37,13 @@ public class ArcaneTable extends Block {
 	
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons (IIconRegister iconRegister) {
-		this.blockIcon = iconRegister.registerIcon(Arcane.MODID + ":" + "ArcaneTableSide");
-		this.arcaneTableTop = iconRegister.registerIcon(Arcane.MODID + ":" + "ArcaneTableTop");
+		this.blockIcon = iconRegister.registerIcon(Reference.MOD_ID + ":" + "ArcaneTableSide");
+		this.arcaneTableTop = iconRegister.registerIcon(Reference.MOD_ID + ":" + "ArcaneTableTop");
 	}
 	
 	public boolean onBlockActivated (World world, int x, int y, int z, EntityPlayer player, int q, float a, float b, float c) {
 		if (!player.isSneaking()) {
-			player.openGui(Arcane.instance, Arcane.guiIDArcaneTable, world, x, y, z);
+			player.openGui(Arcane.instance, BlockRegistry.guiIDArcaneTable, world, x, y, z);
 			return true;
 		}else{
 			return false;

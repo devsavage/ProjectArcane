@@ -3,8 +3,10 @@ package com.woody104.projectarcane.blocks;
 import java.util.Random;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.registry.BlockRegistry;
 import com.woody104.projectarcane.tileentity.TileEntityArcaneFurnace;
 
+import com.woody104.projectarcane.util.Reference;
 import cpw.mods.fml.common.network.internal.FMLNetworkHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -45,9 +47,9 @@ public class ArcaneFurnace extends BlockContainer {
 	
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister iconRegister) {
-		this.blockIcon = iconRegister.registerIcon(Arcane.MODID + ":" + "arcane_furnace_side");
-		this.iconFront = iconRegister.registerIcon(Arcane.MODID + ":" + (this.isActive ? "arcane_furnace_front_on" : "arcane_furnace_front_off"));
-		this.iconTop = iconRegister.registerIcon(Arcane.MODID + ":" + "arcane_furnace_top");
+		this.blockIcon = iconRegister.registerIcon(Reference.MOD_ID + ":" + "arcane_furnace_side");
+		this.iconFront = iconRegister.registerIcon(Reference.MOD_ID + ":" + (this.isActive ? "arcane_furnace_front_on" : "arcane_furnace_front_off"));
+		this.iconTop = iconRegister.registerIcon(Reference.MOD_ID + ":" + "arcane_furnace_top");
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -56,7 +58,7 @@ public class ArcaneFurnace extends BlockContainer {
 	}
 	
 	public Item getItemDropped(int i, Random random, int j) {
-		return Item.getItemFromBlock(Arcane.blockArcaneFurnaceIdle);
+		return Item.getItemFromBlock(BlockRegistry.blockArcaneFurnaceIdle);
 	}
 	
 	public void onBlockAdded(World world, int x, int y, int z) {
@@ -97,7 +99,7 @@ public class ArcaneFurnace extends BlockContainer {
 	
 	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
 		if(!world.isRemote) {
-			FMLNetworkHandler.openGui(player, Arcane.instance, Arcane.guiIDArcaneFurnace, world, x, y, z);
+			FMLNetworkHandler.openGui(player, Arcane.instance, BlockRegistry.guiIDArcaneFurnace, world, x, y, z);
 		}
 		return true;
 	}
@@ -170,9 +172,9 @@ public class ArcaneFurnace extends BlockContainer {
 		keepInventory = true;
 		
 		if(active) {
-			worldObj.setBlock(xCoord, yCoord, zCoord, Arcane.blockArcaneFurnaceActive);
+			worldObj.setBlock(xCoord, yCoord, zCoord, BlockRegistry.blockArcaneFurnaceActive);
 		}else{
-			worldObj.setBlock(xCoord, yCoord, zCoord, Arcane.blockArcaneFurnaceIdle);
+			worldObj.setBlock(xCoord, yCoord, zCoord, BlockRegistry.blockArcaneFurnaceIdle);
 		}
 		
 		keepInventory = false;
@@ -227,6 +229,6 @@ public class ArcaneFurnace extends BlockContainer {
 	}
 	
 	public Item getItem(World world, int x, int y, int z) {
-		return Item.getItemFromBlock(Arcane.blockArcaneFurnaceIdle);
+		return Item.getItemFromBlock(BlockRegistry.blockArcaneFurnaceIdle);
 	}
 }

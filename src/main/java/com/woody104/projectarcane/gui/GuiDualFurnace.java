@@ -3,6 +3,7 @@ package com.woody104.projectarcane.gui;
 import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.tileentity.TileEntityDualFurnace;
 import com.woody104.projectarcane.container.ContainerDualFurnace;
+import com.woody104.projectarcane.util.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
@@ -13,7 +14,7 @@ import org.lwjgl.opengl.GL11;
 
 public class GuiDualFurnace extends GuiContainer {
 
-    private ResourceLocation texture = new ResourceLocation(Arcane.MODID + ":" + "/textures/gui/GuiDualFurnace.png");
+    private ResourceLocation texture = new ResourceLocation(Reference.MOD_ID + ":" + "/textures/gui/GuiDualFurnace.png");
     private TileEntityDualFurnace dualFurnace;
 
     public GuiDualFurnace(InventoryPlayer inventoryPlayer, TileEntityDualFurnace tileEntityDualFurnace) {

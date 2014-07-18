@@ -3,6 +3,7 @@ package com.woody104.projectarcane.tileentity;
 import com.woody104.projectarcane.blocks.DualFurnace;
 import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.crafting.DualFurnaceRecipes;
+import com.woody104.projectarcane.registry.ItemRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -133,7 +134,7 @@ public class TileEntityDualFurnace extends TileEntity implements ISidedInventory
         } else {
             Item item = itemstack.getItem();
 
-            if (item == Arcane.itemWoodChips) return 50;
+            if (item == ItemRegistry.itemWoodChips) return 50;
 
             return 0;
 

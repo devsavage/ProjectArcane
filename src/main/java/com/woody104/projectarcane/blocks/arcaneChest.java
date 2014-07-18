@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.Random;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockChest;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -18,6 +19,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
@@ -32,7 +34,6 @@ public class arcaneChest extends BlockChest {
 
     public arcaneChest(int p_i45397_1_) {
         super(p_i45397_1_);
-        // TODO Auto-generated constructor stub
     }
 
     /**
@@ -247,20 +248,19 @@ public class arcaneChest extends BlockChest {
         return true;
     }
 
+    @SideOnly(Side.CLIENT)
+    public void registerBlockIcons(IIconRegister iconRegister)
+    {
+        this.blockIcon = iconRegister.registerIcon(Reference.MOD_ID + ":" + "arcaneChest");
+    }
 
-    /**
-     * Returns a new instance of a block's tile entity class. Called on placing the block.
-     */
+
     public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_)
     {
         TileEntityArcaneChest tileentitychest = new TileEntityArcaneChest();
         return tileentitychest;
     }
 
-    @SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister)
-    {
-        this.blockIcon = iconRegister.registerIcon(Arcane.MODID + ":" + "arcaneChest");
-    }
+
 
 }

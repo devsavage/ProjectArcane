@@ -1,6 +1,8 @@
 package com.woody104.projectarcane.biome.features;
 
 import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.registry.BlockRegistry;
+import com.woody104.projectarcane.util.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -81,7 +83,7 @@ public class PASapling extends BlockSapling
 
         switch (l) {
             case 0:
-                object = new WorldGenMapleTree(Arcane.blockLog, Arcane.blockLeaf, 0, 0, false, 10, 15, false);
+                object = new WorldGenMapleTree(BlockRegistry.blockLog, BlockRegistry.blockLeaf, 0, 0, false, 10, 15, false);
                 break;
             case 1:
                 object = new WorldGenGreenAppleTree();
@@ -157,7 +159,7 @@ public class PASapling extends BlockSapling
     {
         for (int i = 0; i < iconLength.length; ++i)
         {
-            iconLength[i] = iconRegister.registerIcon(Arcane.MODID + ":" + this.getUnlocalizedName().substring(5) + saplings[i]);
+            iconLength[i] = iconRegister.registerIcon(Reference.MOD_ID + ":" + this.getUnlocalizedName().substring(5) + saplings[i]);
         }
     }
 

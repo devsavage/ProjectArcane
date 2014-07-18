@@ -1,4 +1,4 @@
-package com.woody104.projectarcane.Proxy;
+package com.woody104.projectarcane.proxy;
 
 public class ProxyCommon {
 
