@@ -2,7 +2,6 @@ package com.woody104.projectarcane.blocks;
 
 import java.util.Random;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.registry.CreativeTabRegistry;
 import com.woody104.projectarcane.registry.ItemRegistry;
 import net.minecraft.block.Block;
@@ -13,7 +12,7 @@ public class ArcaneGemOre extends Block {
 
 	public ArcaneGemOre(Material rock) {
 		super(Material.rock);
-        this.setCreativeTab(CreativeTabRegistry.arcaneTab_blocks);
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab);
 		this.setHardness(5F);
 		this.setResistance(5F);
 		this.setLightLevel(0.0F);

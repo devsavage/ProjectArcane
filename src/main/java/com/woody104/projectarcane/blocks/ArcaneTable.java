@@ -1,6 +1,6 @@
 package com.woody104.projectarcane.blocks;
 
-import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.Arcane;
 
 import com.woody104.projectarcane.registry.BlockRegistry;
 import com.woody104.projectarcane.registry.CreativeTabRegistry;
@@ -28,7 +28,7 @@ public class ArcaneTable extends Block {
 		
 		this.setHardness(3.5F);
 		this.setResistance(5.0F);
-        this.setCreativeTab(CreativeTabRegistry.arcaneTab_blocks);	}
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab);	}
 	
 	@SideOnly(Side.CLIENT)
 	public IIcon getIcon (int side, int metadata) {

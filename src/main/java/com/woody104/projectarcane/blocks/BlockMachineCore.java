@@ -1,6 +1,5 @@
 package com.woody104.projectarcane.blocks;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.registry.CreativeTabRegistry;
 import com.woody104.projectarcane.util.Reference;
 import net.minecraft.block.Block;
@@ -17,5 +16,5 @@ public class BlockMachineCore extends Block {
         this.setHarvestLevel("arcanePickaxe", 4);
         this.setBlockName("blockMC");
         this.setBlockTextureName(Reference.MOD_ID + ":" + "blockMachineCore");
-        this.setCreativeTab(CreativeTabRegistry.arcaneTab_blocks);    }
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab);    }
 }

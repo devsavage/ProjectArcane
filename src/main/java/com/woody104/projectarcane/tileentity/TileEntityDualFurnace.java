@@ -1,17 +1,12 @@
 package com.woody104.projectarcane.tileentity;
 
 import com.woody104.projectarcane.blocks.DualFurnace;
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.crafting.DualFurnaceRecipes;
 import com.woody104.projectarcane.registry.ItemRegistry;
-import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;

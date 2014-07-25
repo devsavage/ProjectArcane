@@ -1,13 +1,11 @@
 package com.woody104.projectarcane.blocks;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.registry.CreativeTabRegistry;
 import com.woody104.projectarcane.registry.ItemRegistry;
 import com.woody104.projectarcane.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
 import java.util.Random;
 
@@ -20,7 +18,7 @@ public class BlockSandBlock extends Block {
         this.setLightLevel(0.5F);
         this.setBlockName("blockSandBlock");
         this.setStepSound(soundTypeSand);
-        this.setCreativeTab(CreativeTabRegistry.arcaneTab_blocks);
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab);
         this.setBlockTextureName(Reference.MOD_ID + ":" + "blockSandBlock");
 
     }

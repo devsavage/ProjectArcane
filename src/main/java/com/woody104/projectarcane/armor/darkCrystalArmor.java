@@ -1,7 +1,5 @@
 package com.woody104.projectarcane.armor;
 
-import com.woody104.projectarcane.core.Arcane;
-
 import com.woody104.projectarcane.registry.CreativeTabRegistry;
 import com.woody104.projectarcane.registry.ItemRegistry;
 import net.minecraft.entity.Entity;
@@ -13,7 +11,7 @@ public class darkCrystalArmor extends ItemArmor {
 	public darkCrystalArmor(ArmorMaterial p_i45325_1_, int p_i45325_2_,
 			int p_i45325_3_) {
 		super(p_i45325_1_, p_i45325_2_, p_i45325_3_);
-        this.setCreativeTab(CreativeTabRegistry.arcaneTab_combat);
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab);
 	}
 	
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {

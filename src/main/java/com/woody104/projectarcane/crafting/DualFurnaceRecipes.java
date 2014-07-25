@@ -1,6 +1,5 @@
 package com.woody104.projectarcane.crafting;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.registry.ItemRegistry;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;

@@ -1,6 +1,5 @@
 package com.woody104.projectarcane.gui;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.tileentity.TileEntityDualFurnace;
 import com.woody104.projectarcane.container.ContainerDualFurnace;
 import com.woody104.projectarcane.util.Reference;
@@ -8,7 +7,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 

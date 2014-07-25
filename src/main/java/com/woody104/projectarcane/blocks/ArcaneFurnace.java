@@ -2,7 +2,7 @@ package com.woody104.projectarcane.blocks;
 
 import java.util.Random;
 
-import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.Arcane;
 import com.woody104.projectarcane.registry.BlockRegistry;
 import com.woody104.projectarcane.tileentity.TileEntityArcaneFurnace;
 

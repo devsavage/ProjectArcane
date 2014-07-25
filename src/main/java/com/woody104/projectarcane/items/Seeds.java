@@ -1,7 +1,5 @@
 package com.woody104.projectarcane.items;
 
-import com.woody104.projectarcane.core.Arcane;
-
 import com.woody104.projectarcane.registry.CreativeTabRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -25,7 +23,7 @@ public class Seeds extends Item implements IPlantable {
     	
     	this.farmland = p_i45352_1_;
         this.soilBlockID = farmland;
-        this.setCreativeTab(CreativeTabRegistry.arcaneTab_material);
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab);
     }
     
     public boolean onItemUse(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, World par3World, int par4, int par5, int par6, int par7, float par8, float par9, float par10) {

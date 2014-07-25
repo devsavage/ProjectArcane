@@ -23,8 +23,6 @@ import net.minecraft.item.crafting.ShapelessRecipes;
 import net.minecraft.world.World;
 import net.minecraftforge.oredict.OreDictionary;
 
-import com.woody104.projectarcane.core.Arcane;
-
 public class ArcaneTableCraftingManager
 {
     /** The static instance of this class */

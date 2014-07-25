@@ -2,7 +2,6 @@ package com.woody104.projectarcane.render;
 
 import java.util.Calendar;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.client.model.ModelChest;

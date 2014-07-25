@@ -2,8 +2,6 @@ package com.woody104.projectarcane.block.worldgeneration;
 
 import java.util.Random;
 
-import com.woody104.projectarcane.core.Arcane;
-
 import com.woody104.projectarcane.registry.BlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
@@ -32,7 +30,7 @@ public class ArcaneWorldGen implements IWorldGenerator {
 		//this.addOreSpawn(Arcane.'', world, random, x=blockX, z=blockZ, maxX, maxZ, maxVein, chancetospawn, minY, maxY); 
 		this.addOreSpawn(BlockRegistry.ArcaneGemOre, world, random, x, z, 16, 16, 4+random.nextInt(2), 1, 10, 18);
 		this.addOreSpawn(BlockRegistry.DarkCrystalOre, world, random, x, z, 16, 16, 4+random.nextInt(3), 2, 28, 38);
-		this.addOreSpawn(BlockRegistry.EmeraldNuggetOre, world,random, x, z, 16, 16, 4+random.nextInt(4), 2, 38, 100);
+		this.addOreSpawn(BlockRegistry.EmeraldNuggetOre, world,random, x, z, 16, 16, 4+random.nextInt(2), 1, 38, 100);
         this.addOreSpawn(BlockRegistry.VanadiumOre, world, random, x, z, 16, 16, 4+random.nextInt(3), 2, 38, 48);
         this.addOreSpawn(BlockRegistry.CobaltOre, world, random, x, z, 16, 16, 4+random.nextInt(3), 2, 28, 38);
         this.addOreSpawn(BlockRegistry.ManganeseOre, world, random, x, z, 16, 16, 4+random.nextInt(3), 2, 38, 48);

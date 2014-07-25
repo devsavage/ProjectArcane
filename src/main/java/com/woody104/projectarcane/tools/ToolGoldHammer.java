@@ -4,8 +4,6 @@ import com.woody104.projectarcane.registry.CreativeTabRegistry;
 import com.woody104.projectarcane.util.Reference;
 import net.minecraft.item.Item;
 
-import com.woody104.projectarcane.core.Arcane;
-
 public class ToolGoldHammer extends Item {
 	
 	public ToolGoldHammer() {

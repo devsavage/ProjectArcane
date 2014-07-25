@@ -1,6 +1,6 @@
 package com.woody104.projectarcane.blocks;
 
-import com.woody104.projectarcane.core.Arcane;
+import com.woody104.projectarcane.Arcane;
 import com.woody104.projectarcane.registry.BlockRegistry;
 import com.woody104.projectarcane.tileentity.TileEntityDualFurnace;
 import com.woody104.projectarcane.util.Reference;

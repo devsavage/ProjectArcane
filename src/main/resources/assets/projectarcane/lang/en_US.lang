@@ -1,10 +1,5 @@
 # CreativeTabs
 itemGroup.arcaneTab=Project: Arcane
-itemGroup.arcaneTab_combat=Project: Arcane Combat
-itemGroup.arcaneTab_tools=Project: Arcane Tools
-itemGroup.arcaneTab_food=Project: Arcane Food
-itemGroup.arcaneTab_material=Project: Arcane Materials
-itemGroup.arcaneTab_blocks=Project: Arcane Blocks
 
 # Blocks
 tile.blockEnergyRed.name=Glorium Energy Block
@@ -16,6 +11,8 @@ tile.Log.Maple.name=Maple Log
 tile.Log.GreenApple.name=Green Apple Oak Log
 tile.Leaf.Maple.name=Maple Leaves
 tile.Leaf.GreenApple.name=Green Apple Oak Leaves
+tile.Sapling.Maple.name=Maple Tree Sapling
+tile.Sapling.GreenApple.name=Green Apple Tree Sapling
 
 # Crops
 tile.strawberryPlant.name=Strawberry Plant

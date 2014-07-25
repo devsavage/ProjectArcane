@@ -17,18 +17,18 @@ import net.minecraft.block.material.Material;
 
 public class BlockRegistry
 {
-    public static Block blockArcaneGem = new BlockArcaneGem().setBlockName("blockArcaneGem").setCreativeTab(CreativeTabRegistry.arcaneTab_blocks).setBlockTextureName(Reference.MOD_ID + ":" + "blockArcaneGem");
+    public static Block blockArcaneGem = new BlockArcaneGem().setBlockName("blockArcaneGem").setCreativeTab(CreativeTabRegistry.arcaneTab).setBlockTextureName(Reference.MOD_ID + ":" + "blockArcaneGem");
     public static Block blockMachineCore = new BlockMachineCore();
     public static Block blockSandBlock = new BlockSandBlock();
     public static Block cropStrawberryPlant = new PACrop().setBlockName("strawberryPlant");
     public static Block cropCantalope = new Cantalope().setBlockName("cantalope").setBlockTextureName(Reference.MOD_ID + ":" + "cantalope");
     public static Block cropCantalopeStem = new BlockPAStem(cropCantalope).setBlockName("cantalopeStem").setBlockTextureName(Reference.MOD_ID + ":" + "cantalopeStem");
     //Machines
-    public static Block blockArcaneFurnaceIdle = new ArcaneFurnace(false).setBlockName("ArcaneFurnaceIdle").setCreativeTab(CreativeTabRegistry.arcaneTab_blocks).setHardness(3.5F);
+    public static Block blockArcaneFurnaceIdle = new ArcaneFurnace(false).setBlockName("ArcaneFurnaceIdle").setCreativeTab(CreativeTabRegistry.arcaneTab).setHardness(3.5F);
     public static Block blockArcaneFurnaceActive = new ArcaneFurnace(true).setBlockName("ArcaneFurnaceActive").setLightLevel(0.625F).setHardness(3.5F);
     public static final int guiIDArcaneFurnace = 0;
 
-    public static Block blockDualFurnaceIdle = new DualFurnace(false).setBlockName("DualFurnaceIdle").setCreativeTab(CreativeTabRegistry.arcaneTab_blocks).setHardness(3.5F);
+    public static Block blockDualFurnaceIdle = new DualFurnace(false).setBlockName("DualFurnaceIdle").setCreativeTab(CreativeTabRegistry.arcaneTab).setHardness(3.5F);
     public static Block blockDualFurnaceActive = new DualFurnace(true).setBlockName("DualFurnaceActive").setHardness(3.5F);
     public static final int guiIDDualFurnace = 1;
     //ores
@@ -40,16 +40,16 @@ public class BlockRegistry
     public static Block CobaltOre = new CobaltOre(Material.rock).setBlockName("cobaltOre").setBlockTextureName(Reference.MOD_ID + ":" + "cobaltOre");
     public static Block NickelOre = new NickelOre(Material.rock).setBlockName("nickelOre").setBlockTextureName(Reference.MOD_ID + ":" + "nickelOre");
     //other blocks
-    public static Block arcaneChest = new arcaneChest(0).setBlockName("arcaneChest").setCreativeTab(CreativeTabRegistry.arcaneTab_blocks);
+    public static Block arcaneChest = new arcaneChest(0).setBlockName("arcaneChest").setCreativeTab(CreativeTabRegistry.arcaneTab);
     public static Block blockArcaneLampOn = new ArcaneLamp(true).setBlockName("arcaneLampOn");
-    public static Block blockArcaneLampOff = new ArcaneLamp(false).setBlockName("arcaneLampOff").setCreativeTab(CreativeTabRegistry.arcaneTab_blocks);
+    public static Block blockArcaneLampOff = new ArcaneLamp(false).setBlockName("arcaneLampOff").setCreativeTab(CreativeTabRegistry.arcaneTab);
     //crafting
     public static Block blockArcaneTable = new ArcaneTable().setBlockName("ArcaneTable");
     public static final int guiIDArcaneTable = 1;
     //Trees
-    public static Block blockLog = new PALog().setBlockName("Log").setCreativeTab(CreativeTabRegistry.arcaneTab_blocks);
-    public static Block blockLeaf = new PALeaves().setBlockName("Leaf").setCreativeTab(CreativeTabRegistry.arcaneTab_blocks);
-    public static Block blockSapling = new PASapling().setBlockName("Sapling").setCreativeTab(CreativeTabRegistry.arcaneTab_material);
+    public static Block blockLog = new PALog().setBlockName("Log").setCreativeTab(CreativeTabRegistry.arcaneTab);
+    public static Block blockLeaf = new PALeaves().setBlockName("Leaf").setCreativeTab(CreativeTabRegistry.arcaneTab);
+    public static Block blockSapling = new PASapling().setBlockName("Sapling").setCreativeTab(CreativeTabRegistry.arcaneTab);
 
     public static void init()
     {

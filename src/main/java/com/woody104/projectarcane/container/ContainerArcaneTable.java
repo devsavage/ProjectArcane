@@ -1,6 +1,5 @@
 package com.woody104.projectarcane.container;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.crafting.ArcaneTableCraftingManager;
 
 import com.woody104.projectarcane.registry.BlockRegistry;

@@ -3,7 +3,6 @@ package com.woody104.projectarcane.gui;
 import com.woody104.projectarcane.util.Reference;
 import org.lwjgl.opengl.GL11;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.container.ContainerArcaneTable;
 
 import net.minecraft.client.Minecraft;

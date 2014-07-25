@@ -1,6 +1,5 @@
 package com.woody104.projectarcane.handler;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.registry.ItemRegistry;
 import cpw.mods.fml.common.IFuelHandler;
 import net.minecraft.item.ItemStack;

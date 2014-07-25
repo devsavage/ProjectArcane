@@ -1,6 +1,5 @@
 package com.woody104.projectarcane.biome.features;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.registry.BlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSapling;

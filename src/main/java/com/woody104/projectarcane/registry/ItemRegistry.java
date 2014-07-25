@@ -3,7 +3,6 @@ package com.woody104.projectarcane.registry;
 import com.woody104.projectarcane.armor.arcaneArmor;
 import com.woody104.projectarcane.armor.boneArmor;
 import com.woody104.projectarcane.armor.darkCrystalArmor;
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.food.FoodCookedChickenLeg;
 import com.woody104.projectarcane.food.FoodGreenApple;
 import com.woody104.projectarcane.food.FoodRawChickenLeg;
@@ -36,8 +35,8 @@ public class ItemRegistry
     private static int FA3;
     private static int FA4;
 
-    public static Item itemArcaneGem = new Item().setUnlocalizedName("itemArcaneGem").setCreativeTab(CreativeTabRegistry.arcaneTab_material).setTextureName(Reference.MOD_ID + ":" + "itemArcaneGem");
-    public static Item emeraldNugget = new Item().setUnlocalizedName("EmeraldNugget").setCreativeTab(CreativeTabRegistry.arcaneTab_material).setTextureName(Reference.MOD_ID + ":" + "emerald_nugget");
+    public static Item itemArcaneGem = new Item().setUnlocalizedName("itemArcaneGem").setCreativeTab(CreativeTabRegistry.arcaneTab).setTextureName(Reference.MOD_ID + ":" + "itemArcaneGem");
+    public static Item emeraldNugget = new Item().setUnlocalizedName("EmeraldNugget").setCreativeTab(CreativeTabRegistry.arcaneTab).setTextureName(Reference.MOD_ID + ":" + "emerald_nugget");
     public static Item itemNickel;
     public static Item itemVanadium;
     public static Item itemCobaltDust = new PAItems().setUnlocalizedName("itemCobaltDust");
@@ -79,10 +78,10 @@ public class ItemRegistry
     public static Item foodRawChickenLeg = new FoodRawChickenLeg(4, false).setTextureName(Reference.MOD_ID + ":" + "foodRawChickenLeg");
     public static Item foodCookedChickenLeg = new FoodCookedChickenLeg(8, false).setTextureName(Reference.MOD_ID + ":" + "foodCookedChickenLeg");
     public static Item foodSunflowerSeeds = new FoodSunflowerSeeds(2, 0.3F, false);
-    public static Item cropStrawberry = new ItemFood(4, 0.5F, false).setUnlocalizedName("strawberry").setTextureName(Reference.MOD_ID + ":" + "foodStrawberry").setCreativeTab(CreativeTabRegistry.arcaneTab_food);
-    public static Item cropStrawberrySeeds = new ItemSeeds(BlockRegistry.cropStrawberryPlant, Blocks.farmland).setUnlocalizedName("strawberrySeeds").setTextureName(Reference.MOD_ID + ":" + "seeds_strawberry").setCreativeTab(CreativeTabRegistry.arcaneTab_material);
-    public static Item cropCantalopeSeeds = new ItemSeeds(BlockRegistry.cropCantalopeStem, Blocks.farmland).setUnlocalizedName("cantalopeSeeds").setTextureName(Reference.MOD_ID + ":" + "cantalopeSeeds").setCreativeTab(CreativeTabRegistry.arcaneTab_material);
-    public static Item cropCantalopeSlices = new ItemFood(6, 0.6F, false).setUnlocalizedName("cantalope").setTextureName(Reference.MOD_ID + ":" + "cantalopeSlice").setCreativeTab(CreativeTabRegistry.arcaneTab_food);
+    public static Item cropStrawberry = new ItemFood(4, 0.5F, false).setUnlocalizedName("strawberry").setTextureName(Reference.MOD_ID + ":" + "foodStrawberry").setCreativeTab(CreativeTabRegistry.arcaneTab);
+    public static Item cropStrawberrySeeds = new ItemSeeds(BlockRegistry.cropStrawberryPlant, Blocks.farmland).setUnlocalizedName("strawberrySeeds").setTextureName(Reference.MOD_ID + ":" + "seeds_strawberry").setCreativeTab(CreativeTabRegistry.arcaneTab);
+    public static Item cropCantalopeSeeds = new ItemSeeds(BlockRegistry.cropCantalopeStem, Blocks.farmland).setUnlocalizedName("cantalopeSeeds").setTextureName(Reference.MOD_ID + ":" + "cantalopeSeeds").setCreativeTab(CreativeTabRegistry.arcaneTab);
+    public static Item cropCantalopeSlices = new ItemFood(6, 0.6F, false).setUnlocalizedName("cantalope").setTextureName(Reference.MOD_ID + ":" + "cantalopeSlice").setCreativeTab(CreativeTabRegistry.arcaneTab);
     public static Item toolSaw = new ToolSaw();
     public static Item toolArcaneChisel = new ToolArcaneChisel();
     public static Item toolArcaneHammer = new ToolArcaneHammer();

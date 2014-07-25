@@ -81,7 +81,7 @@ public class RecipeRegistry
         GameRegistry.addShapedRecipe(new ItemStack(ItemRegistry.DirtStick), "   ", " X ", " X ", 'X', Blocks.dirt);
         GameRegistry.addShapedRecipe(new ItemStack(ItemRegistry.DirtStick), " X ", " X ", "   ", 'X', Blocks.dirt);
         GameRegistry.addShapedRecipe(new ItemStack(Items.emerald), "XXX", "XXX", "XXX", 'X', ItemRegistry.emeraldNugget);
-        GameRegistry.addShapedRecipe(new ItemStack(ItemRegistry.foodGreenApple), "XXX", "XYX", "XXX", 'X', Items.emerald, 'Y', Items.apple);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemRegistry.foodGreenApple), "XXX", "XYX", "XXX", 'X', ItemRegistry.emeraldNugget, 'Y', Items.apple);
         GameRegistry.addRecipe(new ItemStack(ItemRegistry.itemCoalChunk), new Object[]{"XX ", "XX ",'X', Items.coal});
         GameRegistry.addRecipe(new ItemStack(ItemRegistry.itemCoalChunk), new Object[]{" XX", " XX",'X', Items.coal});
         GameRegistry.addRecipe(new ItemStack(ItemRegistry.itemCoalChunk), new Object[]{"XX ", "XX", 'X', Items.coal});

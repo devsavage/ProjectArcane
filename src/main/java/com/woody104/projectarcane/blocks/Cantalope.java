@@ -1,6 +1,5 @@
 package com.woody104.projectarcane.blocks;
 
-import com.woody104.projectarcane.core.Arcane;
 import com.woody104.projectarcane.registry.CreativeTabRegistry;
 import com.woody104.projectarcane.registry.ItemRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -21,7 +20,7 @@ public class Cantalope extends Block
     public Cantalope()
     {
         super(Material.gourd);
-        this.setCreativeTab(CreativeTabRegistry.arcaneTab_food);
+        this.setCreativeTab(CreativeTabRegistry.arcaneTab);
         this.setHardness(2.0F);
     }
 

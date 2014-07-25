@@ -1,47 +1,20 @@
-package com.woody104.projectarcane.core;
+package com.woody104.projectarcane;
 
-import com.woody104.projectarcane.biome.features.PALeaves;
-import com.woody104.projectarcane.biome.features.PALog;
-import com.woody104.projectarcane.biome.features.PASapling;
 import com.woody104.projectarcane.handler.*;
-import com.woody104.projectarcane.items.*;
 import com.woody104.projectarcane.registry.*;
-import com.woody104.projectarcane.tileentity.TileEntityArcaneChest;
-import com.woody104.projectarcane.tileentity.TileEntityDualFurnace;
-import com.woody104.projectarcane.tools.*;
 
 import com.woody104.projectarcane.util.LogHelper;
 import com.woody104.projectarcane.util.Reference;
 import com.woody104.projectarcane.util.UpdateChecker;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.*;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraft.item.ItemArmor.ArmorMaterial;
-import net.minecraft.stats.Achievement;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.oredict.OreDictionary;
 
 import com.woody104.projectarcane.proxy.ProxyCommon;
-import com.woody104.projectarcane.armor.arcaneArmor;
-import com.woody104.projectarcane.armor.boneArmor;
-import com.woody104.projectarcane.armor.darkCrystalArmor;
 import com.woody104.projectarcane.block.worldgeneration.ArcaneWorldGen;
-import com.woody104.projectarcane.blocks.*;
-import com.woody104.projectarcane.food.*;
-import com.woody104.projectarcane.items.PAItems;
-import com.woody104.projectarcane.ores.*;
-import com.woody104.projectarcane.tileentity.TileEntityArcaneFurnace;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;

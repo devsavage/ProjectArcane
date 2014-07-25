@@ -1,7 +1,5 @@
 package com.woody104.projectarcane.util;
 
-import com.woody104.projectarcane.core.Arcane;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
