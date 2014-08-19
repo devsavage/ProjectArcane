@@ -5,6 +5,7 @@ import com.woody104.projectarcane.registry.ItemRegistry;
 import com.woody104.projectarcane.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 
 import java.util.Random;
@@ -15,11 +16,11 @@ public class BlockSandBlock extends Block {
         super(Material.sand);
         this.setResistance(0.5F);
         this.setHardness(0.5F);
-        this.setLightLevel(0.5F);
+        this.setLightLevel(Blocks.sand.getLightValue());
         this.setBlockName("blockSandBlock");
         this.setStepSound(soundTypeSand);
         this.setCreativeTab(CreativeTabRegistry.arcaneTab);
-        this.setBlockTextureName(Reference.MOD_ID + ":" + "blockSandBlock");
+        this.setBlockTextureName("sand");
 
     }
 
