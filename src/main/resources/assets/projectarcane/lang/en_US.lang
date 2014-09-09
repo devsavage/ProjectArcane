@@ -21,6 +21,7 @@ item.strawberrySeeds.name=Strawberry Seeds
 item.cantalope.name=Slice of Cantaloupe
 tile.cantalope.name=Cantaloupe Block
 item.cantalopeSeeds.name=Cantaloupe Seeds
+tile.cantalopeStem.name=Stem
 
 # Ores
 tile.ArcaneGemOre.name=Arcane Gem Ore
